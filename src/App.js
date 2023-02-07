@@ -13,6 +13,7 @@ import SignUp from './components/SignUp';
 import LogIn from './components/Login';
 import { useState } from 'react';
 import Alert from './components/Aleart';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         </Switch>
         </div>
      </Router>
+     <Footer/>
    </NoteState>
   </>
   );

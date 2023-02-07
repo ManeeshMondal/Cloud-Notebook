@@ -1,0 +1,41 @@
+
+.banner{
+    background-color: rgb(90 34 180);
+    height: 100vmin;
+    width: 98.75vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* opacity: 13; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(253, 255, 240);
+}  
+  .banner > p {
+    font: 150 4.1vmax "Lucida Sans";
+    /* margin-bottom: 3rem; */
+  }
+
+
+
+  .banner::after {
+    content: "";
+    width: 100vw;
+    height: 110vmin;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    clip-path:polygon(100% 42%, 0% 100%, 100% 100%);
+    max-width: 100%;
+  }
+
+ 
+
+  
+  @media screen and (max-width: 600px) {
+    
+  }

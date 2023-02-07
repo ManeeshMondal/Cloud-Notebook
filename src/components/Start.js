@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import "./Start.css"
 
 const Start = () => {
   return (
-    <>
-    {/* <div className='wholeStart'> */}
-      <div className="start"> 
-        <h1 className='head'>Welcome to CloudNotebook</h1>
+    <Fragment>
+         <div className="banner">
+          <p>Welcome to CloudNOTES</p>
+          {/* <h1>FIND AMAZING PRODUCTS BELOW</h1> */}
+  
       </div>
-    {/* </div> */}
-    
-    </>
+      </Fragment> 
   )
 }
 
