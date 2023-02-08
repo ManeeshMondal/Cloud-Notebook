@@ -39,7 +39,7 @@ function App() {
        <div className="container">
         <Switch>
         <Route exact path="/">
-            <Start/>
+            <Start showAlert={showAlert}/>
           </Route>
         <Route exact path="/home">
             <Home showAlert={showAlert} />
