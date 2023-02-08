@@ -7,13 +7,13 @@ const SignUp = (props) => {
   const [credentials, setCredentials] = useState({name:"",email:"", password:""})
   const handelSubmit=async(e)=>{
     e.preventDefault();
-    const {name,email,password}=credentials;
+    // const {name,email,password}=credentials;
     const response = await fetch("http://localhost:5000/api/auth/creatUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({name:credentials.name, email:credentials.email,password:credentials. password}),
+      body: JSON.stringify({name:credentials.name, email:credentials.email,password:credentials.password}),
     });
     const json= await response.json();
     console.log(json);
