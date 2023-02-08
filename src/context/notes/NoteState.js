@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import noteContext from "./noteContext";
 
 const NoteState = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://cloud-notebook.up.railway.app";
   const initialnotes = [];
   const [notes, setNotes] = useState(initialnotes);
   //get all  notes
