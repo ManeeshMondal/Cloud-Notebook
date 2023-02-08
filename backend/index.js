@@ -16,6 +16,6 @@ app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes')) 
 
 
-app.listen(port, () => {
+app.listen(port||process.env.PORT, () => {
   console.log(`CloudeNotebook is listening on port ${port}`)
 })
