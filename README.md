@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# The Cloud Notebook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Repository for a online notebook where you can store your important notes in your secure account.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Run Locally
 
-### `npm test`
+Clone the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  git clone https://github.com/ManeeshMondal/Cloud-Notebook
+```
 
-### `npm run build`
+Go to the project directory
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  cd Cloud-Notebook
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  npm install
+```
 
-### `npm run eject`
+Start the server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+  npm  start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## API Reference
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ #### index.js - It is the main file which runs the server.
+ #### db.js- It is the file where database connection is made.
+ #### routes - This folder contains routers for API end points. It contains auth.js (/account) and notes.js (/users) files which have API endpoints.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- auth.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| URL | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `/api/auth/creatUser` | `POST` | name,email,password |
+| `/api/auth/login `|`POST` |email,password  |
+| `api/auth/getUser` | `GET` |email,password  |
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-  notes.js
 
-### Analyzing the Bundle Size
+| URL | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `/api/notes/fetchallnotes` | `GET` |email,password |
+| `/api/notes/addnote `|`POST` |title(required),Description(required),tag  |
+| `api/notes/updatenote/:id` | `PUT` |title,Description,tag    |
+| `api/notes/deletenote/:id` | `DELETE` |  None  |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### models - This folder contains User.js and Notes.js files which have schema designs for user bequest and user info.
+ - Notes.js
+    - user- User's ID
+    - title- Notes title
+    - description- Notes description
+    - tag- Notes tag
+    - date- Submission date of the Notes
+ - User.js
+    - name- User name
+    - email- User email
+    - password- User password
+    - date- Date the account has been created
+  #^ two spaces
+#### middleware
+- fetchUser.js-This file contains middlewares for user authentication and generating jwt token
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Features
 
-### Advanced Configuration
+- User authentication using JWT
+- Able to store personal notes in personal account
+- User can update their notes
+- Data privacy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![App Screenshot](https://drive.google.com/file/d/1O7Oa9wC8bMuz2zSssWVaaOWhABtonnqf/view?usp=sharing)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
