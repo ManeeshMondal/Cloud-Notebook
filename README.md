@@ -85,5 +85,5 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1O7Oa9wC8bMuz2zSssWVaaOWhABtonnqf/view?usp=sharing)
+![WhatsApp Image 2023-02-13 at 21 53 04](https://user-images.githubusercontent.com/93001043/219706145-fee2eb33-d27e-47d5-b834-157fb2d91ff1.jpg)
 
