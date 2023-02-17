@@ -95,4 +95,9 @@ Start the server
 ![WhatsApp Image 2023-02-13 at 21 54 32](https://user-images.githubusercontent.com/93001043/219706803-acc86367-18d2-46f3-a1c1-60a9bf169160.jpg)
 #### Home page(Where user can add notes)
 ![WhatsApp Image 2023-02-13 at 22 11 17](https://user-images.githubusercontent.com/93001043/219706806-b02852c7-6e93-4cbd-ae9b-a331a871f21e.jpg)
+#### Notes page
+![WhatsApp Image 2023-02-17 at 21 56 13](https://user-images.githubusercontent.com/93001043/219709553-4933bdd0-daa6-414f-8b64-58bf8fc3e4fb.jpg)
+#### Edit Note page
+![WhatsApp Image 2023-02-17 at 21 56 46](https://user-images.githubusercontent.com/93001043/219709558-305359fa-0e54-4c00-b99b-b5558dc6cd20.jpg)
+
 
